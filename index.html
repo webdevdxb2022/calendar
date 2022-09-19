@@ -4,10 +4,180 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/calendar/styles.css">
+    <script src="/calendar/script.js" defer></script>
     <title>Booking Calendar</title>
 </head>
 <body>
-    <div class="container">My First Div</div>
+    <div class="container">
+        <div class="title">
+            <div class="booking-title">NAS 100M IFMR</div>
+        </div>
+        <div class="booking-window">
+            <div id='bookingButton' class="booking-button">
+                <button id="new-booking-btn">New Booking</button>
+            </div>
+            <div id="bookit1" class="book1">
+                <label>Choose Week Start Date (Monday)</label>
+                <input type="date">
+            </div>
+            <div class="book2">
+                <select id="unitName">
+                    <option value="0">Choose Unit</option>
+                    <option value="KBZ 64">KBZ 64</option>
+                    <option value="KBZ 65">KBZ 65</option>
+                    <option value="KBZ 66">KBZ 66</option>
+                    <option value="MOI 71">MOI 71</option>
+                    <option value="AL FORSAN 2">AL FORSAN 2</option>
+                    <option value="PSG 92">PSG 92</option>
+                    <option value="PSG 93">PSG 93</option>
+                </select>
+                <select id="timeStart">
+                    <option value="0">Start Time</option>
+                    <option value="2">0400</option>
+                    <option value="3">0500</option>
+                    <option value="4">0600</option>
+                    <option value="5">0700</option>
+                    <option value="6">0800</option>
+                    <option value="7">0900</option>
+                    <option value="8">1000</option>
+                    <option value="9">1100</option>
+                    <option value="10">1200</option>
+                    <option value="11">1300</option>
+                    <option value="12">1400</option>
+                    <option value="13">1500</option>
+                    <option value="14">1600</option>
+                    <option value=15>1700</option>
+                    <option value=16>1800</option>
+                    <option value=17>1900</option>
+                    <option value=18>2000</option>
+                    <option value=19>2100</option>
+                    <option value=20>2200</option>
+                    <option value=21>2300</option>
+                </select>
+                <select id="timeEnd">
+                    <option value="0">End Time</option>
+                    <option value="3">0500</option>
+                    <option value="4">0600</option>
+                    <option value="5">0700</option>
+                    <option value="6">0800</option>
+                    <option value="7">0900</option>
+                    <option value="8">1000</option>
+                    <option value="9">1100</option>
+                    <option value="10">1200</option>
+                    <option value="11">1300</option>
+                    <option value="12">1400</option>
+                    <option value="13">1500</option>
+                    <option value="14">1600</option>
+                    <option value=15>1700</option>
+                    <option value=16>1800</option>
+                    <option value=17>1900</option>
+                    <option value=18>2000</option>
+                    <option value=19>2100</option>
+                    <option value=20>2200</option>
+                    <option value=21>2300</option>
+                </select>
+                <button id="book-button">Book</button>
+            </div>
+        </div>
+        <div class="days">
+            <div class="day-column">
+                <div class="day-column-title">Time</div>
+                <div class="day-column-time">
+                    <div class="time">0400</div>
+                </div>
+                <div class="day-column-time">
+                    <div class="time">0500</div>
+                </div>
+                <div class="day-column-time">
+                    <div class="time">0600</div>
+                </div>
+                <div class="day-column-time">
+                    <div class="time">0700</div>
+                </div>
+                <div class="day-column-time">
+                    <div class="time">0800</div>
+                </div>
+                <div class="day-column-time">
+                    <div class="time">0900</div>
+                </div>
+                <div class="day-column-time">
+                    <div class="time">1000</div>
+                </div>
+                <div class="day-column-time">
+                    <div class="time">1100</div>
+                </div>
+                <div class="day-column-time">
+                    <div class="time">1200</div>
+                </div>
+                <div class="day-column-time">
+                    <div class="time">1300</div>
+                </div>
+                <div class="day-column-time">
+                    <div class="time">1400</div>
+                </div>
+                <div class="day-column-time">
+                    <div class="time">1500</div>
+                </div>
+                <div class="day-column-time">
+                    <div class="time">1600</div>
+                </div>
+                <div class="day-column-time">
+                    <div class="time">1700</div>
+                </div>
+                <div class="day-column-time">
+                    <div class="time">1800</div>
+                </div>
+                <div class="day-column-time">
+                    <div class="time">1900</div>
+                </div>
+                <div class="day-column-time">
+                    <div class="time">2000</div>
+                </div>
+                <div class="day-column-time">
+                    <div class="time">2100</div>
+                </div>
+                <div class="day-column-time">
+                    <div class="time">2200</div>
+                </div>
+                <div class="day-column-time">
+                    <div class="time">2300</div>
+                </div>
+            </div>
+            <div id="monday-column" class="day-column">
+                <div class="day-column-title">Monday</div>
+                <div class="booking2">
+                    <div class="booking">MOI</div>
+                    <div class="booking">1000 - 1100</div>
+                </div>
+                <div class="booking3">
+                    <div class="booking">MOI</div>
+                    <div class="booking">1100 - 1200</div>
+                </div>
+            </div>
+            <div id="tuesday-column"  class="day-column">
+                <div class="day-column-title">Tuesday</div>
+                <div id="tue-book-1"></div>
+            </div>
+            <div id="wednesday-column"  class="day-column">
+                <div class="day-column-title">Wednesday</div>
+            </div>
+            <div id="thursday-column"  class="day-column">
+                <div class="day-column-title">Thursday</div>
+            </div>
+            <div id="friday-column"  class="day-column">
+                <div class="day-column-title">Friday</div>
+            </div>
+            <div id="satday-column"  class="day-column">
+                <div class="day-column-title">Saturday</div>
+            </div>
+            <div id="sunnday-column"  class="day-column">
+                <div class="day-column-title">Sunday</div>
+            </div>
+        </div>
+       
+    </div>
+
     
 </body>
 </html>

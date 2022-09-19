@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    display:grid;
+    padding: 20px;
+    grid-template-columns: 3fr 9fr;
+    grid-template-rows: 1fr 11fr;
+    background-color: lightblue;
+}
+
+.title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: brown;
+}
+
+.booking-title {
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.booking-window {
+    background-color: olive;
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr 6fr;
+}
+
+.booking-button {
+    display:grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.book1 {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 10px;
+    background-color: lightcoral;
+}
+
+.day-column {
+    display: grid;
+    grid-template-rows: repeat(21, 1fr);
+    justify-items: stretch;
+    min-height: 80vh;
+    background-color: darkkhaki;
+    border: 1px dotted grey;
+}
+
+.day-column-title {
+    display: grid;
+    font-size: small;
+    font-weight: 200;
+    justify-items: center;
+    align-items: center;
+}
+
+.day-column-time {
+    display: grid;
+    border: 1px dotted grey;
+    justify-items: center;
+    align-items: center;
+}
+
+.booking1 {
+    display: grid;
+    background-color:lime;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid black;
+    font-size: x-small;
+    font-weight: 100;
+    
+}
+
+.booking2 {
+    display: grid;
+    background-color:yellow;
+    justify-items: center;
+    align-items: center;
+    font-size: small;
+    font-weight: 200;
+
+}
+
+.booking3 {
+    display: grid;
+    background-color: yellow;
+    grid-row-start: 9;
+    grid-row-end: 10;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid black
+}
+
+.booking {
+    font-size:x-small;
+    font-weight: 100;
+
+}
+
+.time {
+
+}
+
+
+.hidden {
+    display: none;
+}
