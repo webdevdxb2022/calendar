@@ -83,16 +83,19 @@
   align-content: center;
   align-items: center;
   border: 1px solid black;
-  font-size: x-small;
-  font-weight: 100;
+  font-size: small;
+  font-weight: 200;
 
 }
 
 .booking2 {
   display: grid;
   background-color: yellow;
+  justify-content: center;
   justify-items: center;
   align-items: center;
+  align-content: center;
+  border: 1px solid black;
   font-size: small;
   font-weight: 200;
 
@@ -100,12 +103,14 @@
 
 .booking3 {
   display: grid;
-  background-color: yellow;
-  grid-row-start: 9;
-  grid-row-end: 10;
+  background-color:darkcyan;
+  align-content: center;
+  justify-content: center;
   justify-items: center;
   align-items: center;
-  border: 1px solid black
+  border: 1px solid black;
+  font-size: small;
+  font-weight: 200;
 }
 
 .booking {
@@ -113,8 +118,6 @@
   font-weight: 100;
 
 }
-
-.time {}
 
 
 .hidden {

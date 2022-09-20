@@ -26,7 +26,10 @@ function newBooking() {
         dv2.appendChild(node2);
         dv3.appendChild(dv);
         dv3.appendChild(dv2);
-        if (timeStart.value < 12) {
+        if (unitName.value==="MAINTENANCE") {
+          dv3.className = "booking3";
+        }
+        else if (timeStart.value < 10) {
           dv3.className = "booking1";
         } else { dv3.className = "booking2"; }
        

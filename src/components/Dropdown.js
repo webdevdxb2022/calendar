@@ -10,6 +10,7 @@ const unitOptions = [
     {value: 'KBZ 65', text: 'KBZ 65'},
     {value: 'MOI 71', text: 'MOI 71'},
     {value: 'PSG 92', text: 'PSG 92'},
+    {value: 'MAINTENANCE', text: 'MAINTENANCE'}
   ];
 
 const [selected, setSelected] = useState(unitOptions[0].value);
