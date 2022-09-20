@@ -79,6 +79,8 @@
   display: grid;
   background-color: lime;
   justify-items: center;
+  justify-content: center;
+  align-content: center;
   align-items: center;
   border: 1px solid black;
   font-size: x-small;

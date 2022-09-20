@@ -98,6 +98,7 @@ const App = () => {
             </div>
             <div id="tuesday-column"  className="day-column">
                 <div className="day-column-title">Tuesday</div>
+                <div id="tue-booking1"></div>
             </div>
             <div id="wednesday-column"  className="day-column">
                 <div className="day-column-title">Wednesday</div>
