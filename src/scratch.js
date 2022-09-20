@@ -1,0 +1,7 @@
+const mondayBooking =  document.querySelector('#monday-column')
+const tuesdayBooking =  document.querySelector('#tuesday-column')
+const wednesdayBooking =  document.querySelector('#wednesday-column')
+const thursdayBooking =  document.querySelector('#thursday-column')
+const fridayBooking =  document.querySelector('#friday-column')
+const saturdayBooking =  document.querySelector('#saturday-column')
+const sundayBooking =  document.querySelector('#sunday-column')

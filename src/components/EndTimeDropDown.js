@@ -5,7 +5,7 @@ import { useState } from 'react';
 function EndTimeDropDown() {
 
 const endTimeOptions = [
-    {value: '', text: '--end Time--'},
+    {value: '', text: '--End Time--'},
     {value: '2', text: '0400'},
     {value: '3', text: '0500'},
     {value: '4', text: '0600'},

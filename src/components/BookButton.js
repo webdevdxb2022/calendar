@@ -1,12 +1,20 @@
 
 import React from 'react';
 
+
 function newBooking() {
 
     const unitName = document.querySelector('#unitName')
+    const dayName = document.querySelector('#dayName')
     const timeStart = document.querySelector('#timeStart')
     const timeEnd = document.querySelector('#timeEnd')
-    const tuesdayBooking1 =  document.querySelector('#tuesday-column')
+    const mondayBooking =  document.querySelector('#monday-column')
+    const tuesdayBooking =  document.querySelector('#tuesday-column')
+    const wednesdayBooking =  document.querySelector('#wednesday-column')
+    const thursdayBooking =  document.querySelector('#thursday-column')
+    const fridayBooking =  document.querySelector('#friday-column')
+    const saturdayBooking =  document.querySelector('#saturday-column')
+    const sundayBooking =  document.querySelector('#sunday-column')
     const dv = document.createElement("div");
     const dv2 = document.createElement("div");
     const dv3 = document.createElement("div");
@@ -18,11 +26,29 @@ function newBooking() {
         dv2.appendChild(node2);
         dv3.appendChild(dv);
         dv3.appendChild(dv2);
-        dv3.className = "booking2";
+        if (timeStart.value < 12) {
+          dv3.className = "booking1";
+        } else { dv3.className = "booking2"; }
+       
         dv3.dataset.booking = "booked";
         dv3.style.gridRowStart = timeStart.value;
         dv3.style.gridRowEnd = timeEnd.value;
-        tuesdayBooking1.appendChild(dv3);
+        if (dayName.value==="Monday") {
+          mondayBooking.appendChild(dv3);
+        } else if (dayName.value==="Tuesday") {
+          tuesdayBooking.appendChild(dv3);
+        } else if (dayName.value==="Wednesday") {
+          wednesdayBooking.appendChild(dv3);
+        } else if (dayName.value==="Thursday") {
+          thursdayBooking.appendChild(dv3);
+        } else if (dayName.value==="Friday") {
+          fridayBooking.appendChild(dv3);
+        } else if (dayName.value==="Saturday") {
+          saturdayBooking.appendChild(dv3);
+        } else {
+          sundayBooking.appendChild(dv3);
+        }
+        
   
 
 }

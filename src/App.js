@@ -4,6 +4,7 @@ import Dropdown from './components/Dropdown'
 import StartTimeDropDown from './components/StartTimeDropDown';
 import EndTimeDropDown from './components/EndTimeDropDown';
 import BookButton from './components/BookButton';
+import DayDropdown from './components/DayDropDown';
 
 
 const App = () => {
@@ -87,14 +88,6 @@ const App = () => {
             </div>
             <div id="monday-column" className="day-column">
                 <div className="day-column-title">Monday</div>
-                <div className="booking2">
-                    <div className="booking">MOI</div>
-                    <div className="booking">1000 - 1100</div>
-                </div>
-                <div className="booking3">
-                    <div className="booking">MOI</div>
-                    <div className="booking">1100 - 1200</div>
-                </div>
             </div>
             <div id="tuesday-column"  className="day-column">
                 <div className="day-column-title">Tuesday</div>
@@ -109,15 +102,16 @@ const App = () => {
             <div id="friday-column"  className="day-column">
                 <div className="day-column-title">Friday</div>
             </div>
-            <div id="satday-column"  className="day-column">
+            <div id="saturday-column"  className="day-column">
                 <div className="day-column-title">Saturday</div>
             </div>
-            <div id="sunnday-column"  className="day-column">
+            <div id="sunday-column"  className="day-column">
                 <div className="day-column-title">Sunday</div>
             </div>
         </div>
         <div className="booking-window">
           <div className="book2">
+                <DayDropdown />
                 <Dropdown />
                 <StartTimeDropDown />
                 <EndTimeDropDown />
