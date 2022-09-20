@@ -9,8 +9,9 @@ import BookButton from './components/BookButton';
 const App = () => {
 
         function undo() {
-            const item = document.querySelector('[data-booking-item="booked"]')
-          item.remove();
+            const item = document.querySelectorAll('[data-booking="booked"]');
+           item[item.length - 1].remove();
+           
         }
 
   return (

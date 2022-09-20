@@ -19,11 +19,10 @@ function newBooking() {
         tuesdayBooking1.appendChild(dv);
         dv.className = "booking1";
         dv.id = unitName.value + timeStart.value + timeEnd.value;
-        dv.dataset.bookingItem = "booked";
+        dv.dataset.booking = "booked";
         dv.style.gridRowStart = timeStart.value;
         dv.style.gridRowEnd = timeEnd.value;
-        const divId =  document.getElementById(dv.id);
-        console.log(timeStart.value, timeEnd.value, dv.id, divId);
+  
 
 }
 
