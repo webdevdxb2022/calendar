@@ -1,0 +1,30 @@
+
+ [
+    {
+        "id": 1,
+        "range": "NAS IFMR 100M",
+        "date": "September 19, 2022",
+        "startTime": "0700",
+        "endTime": "1300",
+        "unitName": "KBZ 65"
+    },
+    {
+        "id": 2,
+        "range": "WAS IFMR 100M",
+        "date": "September 19, 2022",
+        "startTime": "0700",
+        "endTime": "1300",
+        "unitName": "KBZ 65"
+    },
+    {
+        "id": 3,
+        "range": "NAS IFMR 100M",
+        "date": "September 19, 2022",
+        "startTime": "1500",
+        "endTime": "2000",
+        "unitName": "MOI 71"
+    }
+
+
+
+ ]

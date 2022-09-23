@@ -5,6 +5,7 @@ import StartTimeDropDown from './components/StartTimeDropDown';
 import EndTimeDropDown from './components/EndTimeDropDown';
 import BookButton from './components/BookButton';
 import DayDropdown from './components/DayDropDown';
+import RangeDropdown from './components/RangeDropdown';
 
 
 const App = () => {
@@ -14,7 +15,11 @@ const App = () => {
            item[item.length - 1].remove();
            
         }
+const title = document.querySelector('.booking-title')
+const rangeName = document.querySelector('#rangeName')
 
+console.log(title.innerHTML, rangeName.value)
+      
   return (
     <div className="App">
       <div className="container">
@@ -111,6 +116,7 @@ const App = () => {
         </div>
         <div className="booking-window">
           <div className="book2">
+                <RangeDropdown />
                 <DayDropdown />
                 <Dropdown />
                 <StartTimeDropDown />
